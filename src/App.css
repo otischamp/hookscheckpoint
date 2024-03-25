@@ -1,8 +1,71 @@
 .App {
   text-align: center;
+  color:white;
+  height: 100rem;
 }
 
-.App-logo {
+.movie-app > .row {
+  overflow-x: auto;
+  overflow-y: Hidden;
+  flex-wrap: nowrap;
+}
+
+
+
+.header {
+  justify-content: space-between;
+}
+
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  height: 25em;
+  width: 15em;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  gap: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +98,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
